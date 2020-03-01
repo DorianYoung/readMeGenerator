@@ -1,7 +1,3 @@
-# readMeGenerator
-Command-line application that dynamically generates a README.md from a user's input
-
-
 
 ![Dorian Young](https://raw.githubusercontent.com/DorianYoung/Weather-Dashboard/master/Assets/weatherDashSC.png)
 https://github.com/DorianYoung
