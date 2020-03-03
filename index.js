@@ -2,11 +2,6 @@ const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 
-
-
- 
-
-
 inquirer
     .prompt([{
         message: "Please enter your Github username",
@@ -96,31 +91,24 @@ ${result.projectLicense}
     
 > ## Badges
     
-![${result.badge}](https://img.shields.io/badge/Dorian-100%25-green)
+![${result.badge}](https://img.shields.io/badge/${result.badge}-100%25-green)
     
 `
         
-        axios
-            .get(queryUrl)
-            .then(function(res){
-                var bioPic = res.data.avatar_url;
-                var eMail = res.data.email;
-                
-                console.log(bioPic);
-                console.log(eMail);
-                
-                fs.writeFile('README.md', html , function (err) {
-                    if (err) throw err;
-                    console.log('Your README has been generated!');
-                  });
-                
-                
-                
-                
-                
-            });
-
+    axios
+        .get(queryUrl)
+        .then(function(res){
+            var bioPic = res.data.avatar_url;
+            var eMail = res.data.email;
+            console.log(bioPic);
+            console.log(eMail);     
         });
+        fs.writeFile('README.md', html , function (err) {
+            if (err) throw err;
+            console.log('Your README has been generated!');
+        });
+     });
+     
 
        
 
