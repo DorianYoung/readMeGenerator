@@ -1,3 +1,4 @@
+
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
@@ -8,7 +9,7 @@ inquirer
         name: "username"
     },
     {
-        message: "Please enter what you would like inside your projects badge",
+        message: "Please enter what you would like inside your projects badge (NO SPACES)",
         name: "badge"
     },
     {
@@ -38,14 +39,18 @@ inquirer
 
     .then(function(result) {
         const queryUrl = `https://api.github.com/users/${result.username}`;
-        const html = 
+        axios
+        .get(queryUrl)
+        .then(function(res){
+                const html = 
 `# ${result.projectTitle}
 
 
 
 
 
-![${result.username}](PUT URL FOR IMAGE HERE)
+![${result.username}](${res.data.avatar_url})
+
 https://github.com/${result.username}
     
 <h2>${result.projectTitle}</h2>
@@ -77,8 +82,6 @@ ${result.projectUsage}
     
 > ## Contributions
     
-- OpenWeather API
-    
 ${result.projectContribution}
     
     
@@ -93,20 +96,19 @@ ${result.projectLicense}
     
 ![${result.badge}](https://img.shields.io/badge/${result.badge}-100%25-green)
     
-`
-        
-    axios
-        .get(queryUrl)
-        .then(function(res){
-            var bioPic = res.data.avatar_url;
-            var eMail = res.data.email;
-            console.log(bioPic);
-            console.log(eMail);     
-        });
+`  
         fs.writeFile('README.md', html , function (err) {
-            if (err) throw err;
-            console.log('Your README has been generated!');
+        if (err) throw err;
+        console.log('Your README has been generated!');
         });
+        });
+        
+        
+        
+      
+        
+        
+    
      });
      
 
