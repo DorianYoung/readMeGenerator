@@ -1,17 +1,17 @@
-# Example Project
+# Dorian Y. ReadMe Generator
 
 
 
 
 
-![DorianYoung](https://avatars1.githubusercontent.com/u/58402970?v=4)
+![DorianYoung](https://media.giphy.com/media/Jr5e0Bs2Ts4JmZxAFo/giphy.gif)
 
 https://github.com/DorianYoung
     
-<h2>Example Project</h2>
+<h2>Dorian Y. ReadMe Generator</h2>
     
-# Example Project
-This is an example description for my project
+# Dorian Y. ReadMe Generator
+Command-line application that dynamically generates a README.md from a user's input. This ReadMe file was created using Dorians ReadMe generator!
     
     
 >  ## **Table of Contents** :notebook:
@@ -27,27 +27,27 @@ This is an example description for my project
     
 > ## Installation
     
-n/a
+npm i Inquirer  |  npm i Axios
     
     
 > ## Usage
     
-n/a
+Command-line application that dynamically generates a README.md from a user's input. This project allows any developer to quickly and efficiently create a ReadMe file for any project!
     
     
 > ## Contributions
     
-n/a
+N/A
     
     
 
 > ## License
     
-n/a
+N/A
     
     
     
 > ## Badges
     
-![Badge](https://img.shields.io/badge/Badge-100%25-green)
+![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-100%25-green)
     
