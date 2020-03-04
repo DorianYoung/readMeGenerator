@@ -1,4 +1,4 @@
-# Dorian Y. ReadMe Generator
+# Example Project
 
 
 
@@ -8,10 +8,10 @@
 
 https://github.com/DorianYoung
     
-<h2>Dorian Y. ReadMe Generator</h2>
+<h2>Example Project</h2>
     
-# Dorian Y. ReadMe Generator
-Command-line application that dynamically generates a README.md from a user's input. This ReadMe file was created using Dorians ReadMe generator!
+# Example Project
+This is an example description for my project
     
     
 >  ## **Table of Contents** :notebook:
@@ -27,27 +27,27 @@ Command-line application that dynamically generates a README.md from a user's in
     
 > ## Installation
     
-npm i Inquirer  |  npm i Axios
+n/a
     
     
 > ## Usage
     
-Command-line application that dynamically generates a README.md from a user's input. This project allows any developer to quickly and efficiently create a ReadMe file for any project!
+n/a
     
     
 > ## Contributions
     
-N/A
+n/a
     
     
 
 > ## License
     
-N/A
+n/a
     
     
     
 > ## Badges
     
-![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-100%25-green)
+![Badge](https://img.shields.io/badge/Badge-100%25-green)
     
