@@ -71,9 +71,9 @@ ${result.projectDescription}
     
     
 > ## Installation
-    
+```sh    
 ${result.projectInstalation}
-    
+```    
     
 > ## Usage
     
