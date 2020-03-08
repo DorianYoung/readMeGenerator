@@ -26,8 +26,9 @@ Command-line application that dynamically generates a README.md from a user's in
     
     
 > ## Installation
-    
-npm i Inquirer  |  npm i Axios
+```sh    
+npm i Inquirer   ||   npm i Axios
+```
     
     
 > ## Usage
